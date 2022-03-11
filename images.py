@@ -13,3 +13,7 @@ crop.save('crop.png', 'png')
 
 resize = filtered_img.resize((300, 300))
 resize.save('resized.png', 'png')
+
+img2 = Image.open('./astro.jpg')
+img2.thumbnail((400,400))
+img2.save('astro-thumb.jpg')
